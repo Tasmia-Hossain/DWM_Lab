@@ -1,0 +1,1028 @@
+run:
+
+Class distribution:
+Enrolled: 794
+Graduate: 2209
+Dropout: 1421
+
+--- MULTI-CLASS EXPERIMENTS ---
+
+Training: RandomForest
+
+Correctly Classified Instances        3458               78.1646 %
+Incorrectly Classified Instances       966               21.8354 %
+Kappa statistic                          0.6301
+Mean absolute error                      0.2246
+Root mean squared error                  0.3245
+Relative absolute error                 54.7494 %
+Root relative squared error             71.6494 %
+Total Number of Instances             4424     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.776    0.077    0.827      0.776    0.801      0.711    0.921     0.879     Dropout
+                 0.933    0.241    0.795      0.933    0.858      0.703    0.926     0.903     Graduate
+                 0.372    0.056    0.592      0.372    0.457      0.383    0.823     0.516     Enrolled
+Weighted Avg.    0.782    0.155    0.769      0.782    0.768      0.648    0.906     0.826     
+
+=== Confusion Matrix ===
+
+    a    b    c   <-- classified as
+ 1102  209  110 |    a = Dropout
+   55 2061   93 |    b = Graduate
+  175  324  295 |    c = Enrolled
+
+ROC AUC (macro): 0.8902
+
+Training: J48
+
+Correctly Classified Instances        3241               73.2595 %
+Incorrectly Classified Instances      1183               26.7405 %
+Kappa statistic                          0.5567
+Mean absolute error                      0.2043
+Root mean squared error                  0.3989
+Relative absolute error                 49.8017 %
+Root relative squared error             88.0866 %
+Total Number of Instances             4424     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.739    0.111    0.759      0.739    0.749      0.633    0.803     0.662     Dropout
+                 0.864    0.219    0.798      0.864    0.830      0.648    0.836     0.745     Graduate
+                 0.355    0.101    0.435      0.355    0.391      0.276    0.619     0.313     Enrolled
+Weighted Avg.    0.733    0.163    0.720      0.733    0.725      0.576    0.786     0.641     
+
+=== Confusion Matrix ===
+
+    a    b    c   <-- classified as
+ 1050  187  184 |    a = Dropout
+  118 1909  182 |    b = Graduate
+  215  297  282 |    c = Enrolled
+
+ROC AUC (macro): 0.7526
+
+Training: SMO
+
+Correctly Classified Instances        3379               76.3788 %
+Incorrectly Classified Instances      1045               23.6212 %
+Kappa statistic                          0.5977
+Mean absolute error                      0.2896
+Root mean squared error                  0.376 
+Relative absolute error                 70.6037 %
+Root relative squared error             83.017  %
+Total Number of Instances             4424     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.714    0.055    0.859      0.714    0.780      0.695    0.881     0.762     Dropout
+                 0.943    0.281    0.770      0.943    0.848      0.679    0.843     0.764     Graduate
+                 0.355    0.071    0.523      0.355    0.423      0.334    0.630     0.302     Enrolled
+Weighted Avg.    0.764    0.171    0.754      0.764    0.750      0.622    0.817     0.680     
+
+=== Confusion Matrix ===
+
+    a    b    c   <-- classified as
+ 1014  238  169 |    a = Dropout
+   38 2083   88 |    b = Graduate
+  128  384  282 |    c = Enrolled
+
+ROC AUC (macro): 0.7849
+
+=== Feature Importance (InfoGain) ===
+Marital_status : 0.0089
+Application_mode : 0.0678
+Application_order : 0.0075
+Course : 0.0911
+Daytime/evening_attendance : 0.0045
+Previous_qualification : 0.0297
+Previous_qualification_(grade) : 0.0457
+Nacionality : 0.0000
+Mother_qualification : 0.0244
+Father_qualification : 0.0225
+Mother_occupation : 0.0375
+Father_occupation : 0.0276
+Admission_grade : 0.0183
+Displaced : 0.0094
+Educational_special_needs : 0.0000
+Debtor : 0.0417
+Tuition_fees_up_to_date : 0.1325
+Gender : 0.0381
+Scholarship_holder : 0.0709
+Age_at_enrollment : 0.0743
+International : 0.0000
+Curricular_units_1st_sem_(credited) : 0.0033
+Curricular_units_1st_sem_(enrolled) : 0.0611
+Curricular_units_1st_sem_(evaluations) : 0.1197
+Curricular_units_1st_sem_(approved) : 0.3458
+Curricular_units_1st_sem_(grade) : 0.2315
+Curricular_units_1st_sem_(without_evaluations) : 0.0053
+Curricular_units_2nd_sem_(credited) : 0.0035
+Curricular_units_2nd_sem_(enrolled) : 0.0622
+Curricular_units_2nd_sem_(evaluations) : 0.1273
+Curricular_units_2nd_sem_(approved) : 0.4514
+Curricular_units_2nd_sem_(grade) : 0.3164
+Curricular_units_2nd_sem_(without_evaluations) : 0.0065
+Unemployment_rate : 0.0000
+Inflation_rate : 0.0000
+GDP : 0.0040
+pass_rate_1st_sem : 0.3905
+eval_load_1st_sem : 0.1366
+financial_risk : 0.0000
+Removing leakage attribute: Curricular_units_1st_sem_(approved)
+Removing leakage attribute: Curricular_units_1st_sem_(grade)
+Removing leakage attribute: Curricular_units_1st_sem_(evaluations)
+Removing leakage attribute: Curricular_units_2nd_sem_(approved)
+Removing leakage attribute: Curricular_units_2nd_sem_(grade)
+Removing leakage attribute: Curricular_units_2nd_sem_(evaluations)
+Removing leakage attribute: pass_rate_1st_sem
+Removing leakage attribute: eval_load_1st_sem
+Removing leakage attribute: financial_risk
+Removing leakage attribute: Target
+
+Class distribution:
+NonDropout: 3003
+Dropout: 1421
+
+--- BINARY DROP-OUT EXPERIMENTS ---
+
+Training: RandomForest
+
+Correctly Classified Instances        3512               79.3852 %
+Incorrectly Classified Instances       912               20.6148 %
+Kappa statistic                          0.4807
+Mean absolute error                      0.3044
+Root mean squared error                  0.3852
+Relative absolute error                 69.7963 %
+Root relative squared error             82.5031 %
+Total Number of Instances             4424     
+
+
+Training: J48
+
+Correctly Classified Instances        3352               75.7685 %
+Incorrectly Classified Instances      1072               24.2315 %
+Kappa statistic                          0.4189
+Mean absolute error                      0.2908
+Root mean squared error                  0.4559
+Relative absolute error                 66.678  %
+Root relative squared error             97.636  %
+Total Number of Instances             4424     
+
+
+Training: SMO
+
+Correctly Classified Instances        3389               76.6049 %
+Incorrectly Classified Instances      1035               23.3951 %
+Kappa statistic                          0.3571
+Mean absolute error                      0.234 
+Root mean squared error                  0.4837
+Relative absolute error                 53.6468 %
+Root relative squared error            103.5864 %
+Total Number of Instances             4424     
+
+
+=== Feature Importance (InfoGain) ===
+Marital_status : 0.0089
+Application_mode : 0.0601
+Application_order : 0.0052
+Course : 0.0477
+Daytime/evening_attendance : 0.0045
+Previous_qualification : 0.0278
+Previous_qualification_(grade) : 0.0435
+Nacionality : 0.0000
+Mother_qualification : 0.0217
+Father_qualification : 0.0210
+Mother_occupation : 0.0308
+Father_occupation : 0.0228
+Admission_grade : 0.0111
+Displaced : 0.0083
+Educational_special_needs : 0.0000
+Debtor : 0.0352
+Tuition_fees_up_to_date : 0.1269
+Gender : 0.0294
+Scholarship_holder : 0.0491
+Age_at_enrollment : 0.0684
+International : 0.0000
+Curricular_units_1st_sem_(credited) : 0.0000
+Curricular_units_1st_sem_(enrolled) : 0.0227
+Curricular_units_1st_sem_(without_evaluations) : 0.0026
+Curricular_units_2nd_sem_(credited) : 0.0000
+Curricular_units_2nd_sem_(enrolled) : 0.0318
+Curricular_units_2nd_sem_(without_evaluations) : 0.0036
+Unemployment_rate : 0.0000
+Inflation_rate : 0.0000
+GDP : 0.0040
+
+=== Cluster Profiles ===
+Cluster 0 (size: 778):
+  Class distribution: Enrolled=9.77% Graduate=9.64% Dropout=80.59% 
+  Numeric attribute summary:
+    Marital_status: mean=0.1232 std=1.2059
+    Application_mode: mean=0.2197 std=0.9935
+    Application_order: mean=-0.1157 std=0.8910
+    Course: mean=-0.8271 std=1.8867
+    Daytime/evening_attendance: mean=-0.0950 std=1.1086
+    Previous_qualification: mean=0.0104 std=0.8975
+    Previous_qualification_(grade): mean=-0.0003 std=1.0316
+    Nacionality: mean=-0.0055 std=0.9678
+    Mother_qualification: mean=0.0566 std=0.9814
+    Father_qualification: mean=0.0079 std=1.0014
+    Mother_occupation: mean=0.0339 std=0.9629
+    Father_occupation: mean=0.0247 std=0.9711
+    Admission_grade: mean=-0.0344 std=1.1216
+    Displaced: mean=-0.1359 std=1.0039
+    Educational_special_needs: mean=0.0124 std=1.0551
+    Debtor: mean=0.1925 std=1.1963
+    Tuition_fees_up_to_date: mean=-0.5358 std=1.4038
+    Gender: mean=0.3805 std=1.0446
+    Scholarship_holder: mean=-0.3339 std=0.7067
+    Age_at_enrollment: mean=0.3240 std=1.1395
+    International: mean=-0.0111 std=0.9654
+    Curricular_units_1st_sem_(credited): mean=-0.2981 std=0.0401
+    Curricular_units_1st_sem_(enrolled): mean=-0.8041 std=1.0087
+    Curricular_units_1st_sem_(evaluations): mean=-0.9844 std=1.0682
+    Curricular_units_1st_sem_(approved): mean=-1.4899 std=0.1110
+    Curricular_units_1st_sem_(grade): mean=-2.0111 std=0.6301
+    Curricular_units_1st_sem_(without_evaluations): mean=0.1524 std=1.5403
+    Curricular_units_2nd_sem_(credited): mean=-0.2791 std=0.0493
+    Curricular_units_2nd_sem_(enrolled): mean=-0.8579 std=1.1506
+    Curricular_units_2nd_sem_(evaluations): mean=-1.1503 std=0.9993
+    Curricular_units_2nd_sem_(approved): mean=-1.4436 std=0.1364
+    Curricular_units_2nd_sem_(grade): mean=-1.8503 std=0.4970
+    Curricular_units_2nd_sem_(without_evaluations): mean=0.1536 std=1.5917
+    Unemployment_rate: mean=-0.0071 std=1.0320
+    Inflation_rate: mean=0.0638 std=1.0440
+    GDP: mean=-0.1197 std=0.9995
+    pass_rate_1st_sem: mean=-1.8634 std=0.1692
+    eval_load_1st_sem: mean=-0.9127 std=1.4004
+    financial_risk: mean=0.0000 std=0.0000
+
+Cluster 1 (size: 1562):
+  Class distribution: Enrolled=17.48% Graduate=80.54% Dropout=1.98% 
+  Numeric attribute summary:
+    Marital_status: mean=-0.2346 std=0.4631
+    Application_mode: mean=-0.3768 std=0.8328
+    Application_order: mean=0.3894 std=1.1655
+    Course: mean=0.1870 std=0.5467
+    Daytime/evening_attendance: mean=0.2679 std=0.5065
+    Previous_qualification: mean=-0.1287 std=0.8642
+    Previous_qualification_(grade): mean=0.0055 std=0.9445
+    Nacionality: mean=-0.0061 std=1.0139
+    Mother_qualification: mean=-0.0709 std=0.9855
+    Father_qualification: mean=-0.0190 std=0.9964
+    Mother_occupation: mean=-0.0622 std=0.8664
+    Father_occupation: mean=-0.0574 std=0.8737
+    Admission_grade: mean=0.0047 std=0.8568
+    Displaced: mean=0.9074 std=NaN
+    Educational_special_needs: mean=-0.0060 std=0.9718
+    Debtor: mean=-0.2654 std=0.5325
+    Tuition_fees_up_to_date: mean=0.3247 std=0.3634
+    Gender: mean=-0.3826 std=0.7847
+    Scholarship_holder: mean=0.2992 std=1.1219
+    Age_at_enrollment: mean=-0.4273 std=0.5014
+    International: mean=0.0007 std=1.0019
+    Curricular_units_1st_sem_(credited): mean=-0.0724 std=0.9241
+    Curricular_units_1st_sem_(enrolled): mean=0.1767 std=0.8174
+    Curricular_units_1st_sem_(evaluations): mean=0.0536 std=0.7520
+    Curricular_units_1st_sem_(approved): mean=0.4451 std=0.6922
+    Curricular_units_1st_sem_(grade): mean=0.4836 std=0.2786
+    Curricular_units_1st_sem_(without_evaluations): mean=-0.0417 std=0.8786
+    Curricular_units_2nd_sem_(credited): mean=-0.0612 std=0.9565
+    Curricular_units_2nd_sem_(enrolled): mean=0.2360 std=0.8133
+    Curricular_units_2nd_sem_(evaluations): mean=0.1356 std=0.7306
+    Curricular_units_2nd_sem_(approved): mean=0.5322 std=0.6633
+    Curricular_units_2nd_sem_(grade): mean=0.5275 std=0.2635
+    Curricular_units_2nd_sem_(without_evaluations): mean=-0.1017 std=0.6010
+    Unemployment_rate: mean=-0.0763 std=0.9374
+    Inflation_rate: mean=-0.0290 std=0.9862
+    GDP: mean=0.0837 std=0.9956
+    pass_rate_1st_sem: mean=0.5638 std=0.4083
+    eval_load_1st_sem: mean=-0.0001 std=0.6265
+    financial_risk: mean=0.0000 std=0.0000
+
+Cluster 2 (size: 984):
+  Class distribution: Enrolled=23.17% Graduate=0.10% Dropout=76.73% 
+  Numeric attribute summary:
+    Marital_status: mean=0.0407 std=1.0464
+    Application_mode: mean=0.2631 std=1.0082
+    Application_order: mean=-0.1193 std=0.9281
+    Course: mean=0.1505 std=0.6294
+    Daytime/evening_attendance: mean=-0.0019 std=1.0022
+    Previous_qualification: mean=0.1257 std=1.1410
+    Previous_qualification_(grade): mean=-0.1236 std=0.9582
+    Nacionality: mean=0.0285 std=1.0931
+    Mother_qualification: mean=-0.0432 std=1.0098
+    Father_qualification: mean=-0.0966 std=1.0253
+    Mother_occupation: mean=-0.0045 std=0.9968
+    Father_occupation: mean=-0.0113 std=0.9875
+    Admission_grade: mean=-0.1062 std=1.0130
+    Displaced: mean=-0.1013 std=1.0046
+    Educational_special_needs: mean=-0.0128 std=0.9395
+    Debtor: mean=0.4293 std=1.3639
+    Tuition_fees_up_to_date: mean=-0.4625 std=1.3681
+    Gender: mean=0.4850 std=1.0323
+    Scholarship_holder: mean=-0.4479 std=0.5270
+    Age_at_enrollment: mean=0.1875 std=1.0443
+    International: mean=0.0231 std=1.0677
+    Curricular_units_1st_sem_(credited): mean=0.1418 std=1.1043
+    Curricular_units_1st_sem_(enrolled): mean=0.0909 std=0.8955
+    Curricular_units_1st_sem_(evaluations): mean=0.4826 std=0.8540
+    Curricular_units_1st_sem_(approved): mean=-0.0750 std=0.7781
+    Curricular_units_1st_sem_(grade): mean=0.3144 std=0.2689
+    Curricular_units_1st_sem_(without_evaluations): mean=0.0096 std=0.7714
+    Curricular_units_2nd_sem_(credited): mean=0.1112 std=1.0776
+    Curricular_units_2nd_sem_(enrolled): mean=0.0539 std=0.8557
+    Curricular_units_2nd_sem_(evaluations): mean=0.4911 std=0.8948
+    Curricular_units_2nd_sem_(approved): mean=-0.3121 std=0.8244
+    Curricular_units_2nd_sem_(grade): mean=0.0561 std=0.8123
+    Curricular_units_2nd_sem_(without_evaluations): mean=0.0945 std=1.0409
+    Unemployment_rate: mean=-0.0275 std=1.0322
+    Inflation_rate: mean=-0.0117 std=0.9690
+    GDP: mean=0.0369 std=1.0025
+    pass_rate_1st_sem: mean=-0.0544 std=0.6517
+    eval_load_1st_sem: mean=0.6092 std=0.8756
+    financial_risk: mean=0.0000 std=0.0000
+
+Cluster 3 (size: 1100):
+  Class distribution: Enrolled=19.73% Graduate=79.55% Dropout=0.73% 
+  Numeric attribute summary:
+    Marital_status: mean=0.2095 std=1.2547
+    Application_mode: mean=0.1443 std=1.0537
+    Application_order: mean=-0.3644 std=0.6242
+    Course: mean=0.1849 std=0.3697
+    Daytime/evening_attendance: mean=-0.3116 std=1.2975
+    Previous_qualification: mean=0.0630 std=1.0882
+    Previous_qualification_(grade): mean=0.1030 std=1.0751
+    Nacionality: mean=-0.0130 std=0.9104
+    Mother_qualification: mean=0.0993 std=1.0137
+    Father_qualification: mean=0.1078 std=0.9701
+    Mother_occupation: mean=0.0683 std=1.1829
+    Father_occupation: mean=0.0741 std=1.1777
+    Admission_grade: mean=0.1127 std=1.0710
+    Displaced: mean=-1.1018 std=0.0000
+    Educational_special_needs: mean=0.0112 std=1.0500
+    Debtor: mean=-0.1434 std=0.7939
+    Tuition_fees_up_to_date: mean=0.3316 std=0.3333
+    Gender: mean=-0.1597 std=0.9355
+    Scholarship_holder: mean=0.2119 std=1.0962
+    Age_at_enrollment: mean=0.2098 std=1.1666
+    International: mean=-0.0137 std=0.9570
+    Curricular_units_1st_sem_(credited): mean=0.1868 std=1.2622
+    Curricular_units_1st_sem_(enrolled): mean=0.2366 std=1.0344
+    Curricular_units_1st_sem_(evaluations): mean=0.1884 std=0.9083
+    Curricular_units_1st_sem_(approved): mean=0.4888 std=0.8336
+    Curricular_units_1st_sem_(grade): mean=0.4545 std=0.2786
+    Curricular_units_1st_sem_(without_evaluations): mean=-0.0571 std=0.8319
+    Curricular_units_2nd_sem_(credited): mean=0.1848 std=1.2553
+    Curricular_units_2nd_sem_(enrolled): mean=0.2234 std=0.9156
+    Curricular_units_2nd_sem_(evaluations): mean=0.1818 std=0.7935
+    Curricular_units_2nd_sem_(approved): mean=0.5445 std=0.7177
+    Curricular_units_2nd_sem_(grade): mean=0.5094 std=0.2805
+    Curricular_units_2nd_sem_(without_evaluations): mean=-0.0487 std=0.8398
+    Unemployment_rate: mean=0.1380 std=1.0192
+    Inflation_rate: mean=0.0066 std=1.0123
+    GDP: mean=-0.0672 std=0.9910
+    pass_rate_1st_sem: mean=0.5661 std=0.3921
+    eval_load_1st_sem: mean=0.1008 std=0.6778
+    financial_risk: mean=0.0000 std=0.0000
+
+
+=== Cluster Profiles ===
+Cluster 0 (size: 80):
+  Class distribution: Enrolled=30.00% Graduate=45.00% Dropout=25.00% 
+  Numeric attribute summary:
+    Marital_status: mean=0.0560 std=0.9300
+    Application_mode: mean=0.1926 std=0.9165
+    Application_order: mean=-0.2305 std=0.6227
+    Course: mean=0.2171 std=0.2032
+    Daytime/evening_attendance: mean=-0.0107 std=1.0131
+    Previous_qualification: mean=-0.0969 std=0.8495
+    Previous_qualification_(grade): mean=0.3803 std=1.2669
+    Nacionality: mean=4.0316 std=4.6568
+    Mother_qualification: mean=-0.1882 std=1.0170
+    Father_qualification: mean=-0.3055 std=1.0288
+    Mother_occupation: mean=1.5672 std=2.4438
+    Father_occupation: mean=1.2248 std=2.2406
+    Admission_grade: mean=0.1858 std=1.3991
+    Displaced: mean=-0.2981 std=0.9843
+    Educational_special_needs: mean=0.0091 std=1.0407
+    Debtor: mean=0.1537 std=1.1620
+    Tuition_fees_up_to_date: mean=0.1753 std=0.7466
+    Gender: mean=-0.1606 std=0.9350
+    Scholarship_holder: mean=-0.1699 std=0.8793
+    Age_at_enrollment: mean=0.3571 std=1.2568
+    International: mean=4.1748 std=3.0076
+    Curricular_units_1st_sem_(credited): mean=-0.2266 std=0.2394
+    Curricular_units_1st_sem_(enrolled): mean=-0.1998 std=0.3548
+    Curricular_units_1st_sem_(evaluations): mean=0.2156 std=0.7418
+    Curricular_units_1st_sem_(approved): mean=-0.1799 std=0.6819
+    Curricular_units_1st_sem_(grade): mean=0.2845 std=0.6437
+    Curricular_units_1st_sem_(without_evaluations): mean=0.1445 std=1.2586
+    Curricular_units_2nd_sem_(credited): mean=-0.2563 std=0.1136
+    Curricular_units_2nd_sem_(enrolled): mean=-0.2139 std=0.4511
+    Curricular_units_2nd_sem_(evaluations): mean=0.0631 std=0.9059
+    Curricular_units_2nd_sem_(approved): mean=-0.1694 std=0.7394
+    Curricular_units_2nd_sem_(grade): mean=0.1299 std=0.8408
+    Curricular_units_2nd_sem_(without_evaluations): mean=-0.1165 std=0.3836
+    Unemployment_rate: mean=-0.1276 std=0.9162
+    Inflation_rate: mean=0.0629 std=0.9382
+    GDP: mean=0.2299 std=1.0054
+    pass_rate_1st_sem: mean=0.0379 std=0.9065
+    eval_load_1st_sem: mean=0.5842 std=0.9901
+    financial_risk: mean=0.0000 std=0.0000
+
+Cluster 1 (size: 90):
+  Class distribution: Enrolled=6.67% Dropout=93.33% 
+  Numeric attribute summary:
+    Marital_status: mean=1.5578 std=2.5555
+    Application_mode: mean=0.8241 std=0.8093
+    Application_order: mean=-0.2665 std=0.7228
+    Course: mean=0.0592 std=0.6959
+    Daytime/evening_attendance: mean=-0.5049 std=1.4178
+    Previous_qualification: mean=1.0169 std=1.6213
+    Previous_qualification_(grade): mean=0.0463 std=1.0488
+    Nacionality: mean=-0.0459 std=0.6140
+    Mother_qualification: mean=0.2282 std=0.9422
+    Father_qualification: mean=0.1139 std=0.9645
+    Mother_occupation: mean=1.3103 std=2.0687
+    Father_occupation: mean=1.4506 std=2.1372
+    Admission_grade: mean=-0.1381 std=1.2297
+    Displaced: mean=-0.6553 std=0.8353
+    Educational_special_needs: mean=0.4124 std=2.1456
+    Debtor: mean=0.2718 std=1.2599
+    Tuition_fees_up_to_date: mean=-0.6600 std=1.4539
+    Gender: mean=0.1942 std=1.0405
+    Scholarship_holder: mean=-0.4720 std=0.4769
+    Age_at_enrollment: mean=0.9989 std=1.2932
+    International: mean=0.0544 std=1.1527
+    Curricular_units_1st_sem_(credited): mean=-0.3008 std=0.0000
+    Curricular_units_1st_sem_(enrolled): mean=-0.4003 std=0.5171
+    Curricular_units_1st_sem_(evaluations): mean=-0.9144 std=0.9744
+    Curricular_units_1st_sem_(approved): mean=-1.5067 std=0.0666
+    Curricular_units_1st_sem_(grade): mean=-2.0913 std=0.4936
+    Curricular_units_1st_sem_(without_evaluations): mean=-0.1028 std=0.5196
+    Curricular_units_2nd_sem_(credited): mean=-0.2592 std=0.1326
+    Curricular_units_2nd_sem_(enrolled): mean=-0.3789 std=0.5071
+    Curricular_units_2nd_sem_(evaluations): mean=-1.0180 std=0.9409
+    Curricular_units_2nd_sem_(approved): mean=-1.4345 std=0.1437
+    Curricular_units_2nd_sem_(grade): mean=-1.8183 std=0.5474
+    Curricular_units_2nd_sem_(without_evaluations): mean=-0.1552 std=0.2381
+    Unemployment_rate: mean=-0.1037 std=1.0303
+    Inflation_rate: mean=0.3654 std=0.9087
+    GDP: mean=0.1691 std=0.9612
+    pass_rate_1st_sem: mean=-1.8894 std=0.0991
+    eval_load_1st_sem: mean=-0.7577 std=1.3099
+    financial_risk: mean=0.0000 std=0.0000
+
+Cluster 2 (size: 185):
+  Class distribution: Enrolled=30.81% Graduate=54.59% Dropout=14.59% 
+  Numeric attribute summary:
+    Marital_status: mean=-0.2323 std=0.5254
+    Application_mode: mean=-0.4386 std=0.7886
+    Application_order: mean=0.1372 std=1.0785
+    Course: mean=0.2101 std=0.1229
+    Daytime/evening_attendance: mean=0.3500 std=0.0000
+    Previous_qualification: mean=-0.2264 std=0.5946
+    Previous_qualification_(grade): mean=-0.0986 std=0.8124
+    Nacionality: mean=-0.1263 std=0.0000
+    Mother_qualification: mean=0.0360 std=0.9757
+    Father_qualification: mean=0.0641 std=0.9361
+    Mother_occupation: mean=2.0621 std=2.9011
+    Father_occupation: mean=2.1735 std=2.9148
+    Admission_grade: mean=-0.1008 std=0.8512
+    Displaced: mean=0.1472 std=0.9744
+    Educational_special_needs: mean=-0.1080 std=NaN
+    Debtor: mean=0.1356 std=1.1452
+    Tuition_fees_up_to_date: mean=0.2347 std=0.6273
+    Gender: mean=-0.0121 std=0.9961
+    Scholarship_holder: mean=-0.0495 std=0.9694
+    Age_at_enrollment: mean=-0.4446 std=0.2788
+    International: mean=-0.1597 std=NaN
+    Curricular_units_1st_sem_(credited): mean=-0.3008 std=0.0000
+    Curricular_units_1st_sem_(enrolled): mean=-0.1876 std=0.4118
+    Curricular_units_1st_sem_(evaluations): mean=0.1613 std=0.6306
+    Curricular_units_1st_sem_(approved): mean=0.0494 std=0.4597
+    Curricular_units_1st_sem_(grade): mean=0.4330 std=0.2379
+    Curricular_units_1st_sem_(without_evaluations): mean=0.6770 std=1.3469
+    Curricular_units_2nd_sem_(credited): mean=-0.2824 std=0.0000
+    Curricular_units_2nd_sem_(enrolled): mean=-0.1796 std=0.4888
+    Curricular_units_2nd_sem_(evaluations): mean=0.1414 std=0.5678
+    Curricular_units_2nd_sem_(approved): mean=0.1190 std=0.4743
+    Curricular_units_2nd_sem_(grade): mean=0.4467 std=0.2122
+    Curricular_units_2nd_sem_(without_evaluations): mean=0.7257 std=1.3482
+    Unemployment_rate: mean=-0.4938 std=0.9591
+    Inflation_rate: mean=-0.2845 std=0.9572
+    GDP: mean=-0.0660 std=1.0714
+    pass_rate_1st_sem: mean=0.3720 std=0.5096
+    eval_load_1st_sem: mean=0.5196 std=0.9482
+    financial_risk: mean=0.0000 std=0.0000
+
+Cluster 3 (size: 452):
+  Class distribution: Enrolled=25.00% Graduate=15.04% Dropout=59.96% 
+  Numeric attribute summary:
+    Marital_status: mean=0.5964 std=1.5222
+    Application_mode: mean=1.0489 std=0.6786
+    Application_order: mean=-0.5523 std=0.0358
+    Course: mean=0.1664 std=0.5021
+    Daytime/evening_attendance: mean=-0.7211 std=1.5122
+    Previous_qualification: mean=0.8677 std=1.5864
+    Previous_qualification_(grade): mean=-0.1096 std=1.0291
+    Nacionality: mean=-0.1135 std=0.2718
+    Mother_qualification: mean=0.2518 std=1.0034
+    Father_qualification: mean=0.1834 std=0.9781
+    Mother_occupation: mean=-0.1761 std=0.1858
+    Father_occupation: mean=-0.1926 std=0.1141
+    Admission_grade: mean=0.1209 std=1.1687
+    Displaced: mean=-0.5995 std=0.8700
+    Educational_special_needs: mean=-0.1080 std=0.0000
+    Debtor: mean=0.3248 std=1.2980
+    Tuition_fees_up_to_date: mean=-0.3620 std=1.3110
+    Gender: mean=0.3290 std=1.0468
+    Scholarship_holder: mean=-0.5646 std=0.1536
+    Age_at_enrollment: mean=1.0850 std=1.1736
+    International: mean=-0.1455 std=0.3017
+    Curricular_units_1st_sem_(credited): mean=0.3056 std=0.8967
+    Curricular_units_1st_sem_(enrolled): mean=0.1425 std=0.7911
+    Curricular_units_1st_sem_(evaluations): mean=0.6352 std=0.8763
+    Curricular_units_1st_sem_(approved): mean=-0.1304 std=0.6639
+    Curricular_units_1st_sem_(grade): mean=0.3218 std=0.2850
+    Curricular_units_1st_sem_(without_evaluations): mean=0.0633 std=0.8695
+    Curricular_units_2nd_sem_(credited): mean=0.2792 std=0.9022
+    Curricular_units_2nd_sem_(enrolled): mean=0.1059 std=0.7906
+    Curricular_units_2nd_sem_(evaluations): mean=0.5119 std=0.9624
+    Curricular_units_2nd_sem_(approved): mean=-0.2429 std=0.7876
+    Curricular_units_2nd_sem_(grade): mean=0.1010 std=0.8167
+    Curricular_units_2nd_sem_(without_evaluations): mean=0.1176 std=1.0219
+    Unemployment_rate: mean=0.2570 std=1.0551
+    Inflation_rate: mean=-0.1046 std=1.0056
+    GDP: mean=-0.1487 std=0.9976
+    pass_rate_1st_sem: mean=-0.1356 std=0.6815
+    eval_load_1st_sem: mean=0.7165 std=0.9241
+    financial_risk: mean=0.0000 std=0.0000
+
+Cluster 4 (size: 156):
+  Class distribution: Enrolled=16.03% Graduate=76.28% Dropout=7.69% 
+  Numeric attribute summary:
+    Marital_status: mean=-0.0726 std=0.5635
+    Application_mode: mean=1.0088 std=0.8106
+    Application_order: mean=-0.4369 std=0.4322
+    Course: mean=0.1875 std=0.1830
+    Daytime/evening_attendance: mean=0.1034 std=0.8544
+    Previous_qualification: mean=1.9330 std=1.6936
+    Previous_qualification_(grade): mean=0.4626 std=1.2467
+    Nacionality: mean=-0.0938 std=0.3101
+    Mother_qualification: mean=-0.0849 std=1.0434
+    Father_qualification: mean=-0.1002 std=1.0412
+    Mother_occupation: mean=-0.0975 std=0.6749
+    Father_occupation: mean=0.0079 std=0.9487
+    Admission_grade: mean=0.7631 std=1.2686
+    Displaced: mean=-0.1873 std=1.0005
+    Educational_special_needs: mean=0.7326 std=2.6772
+    Debtor: mean=0.0255 std=1.0301
+    Tuition_fees_up_to_date: mean=0.2692 std=0.5432
+    Gender: mean=0.0555 std=1.0155
+    Scholarship_holder: mean=0.1223 std=1.0617
+    Age_at_enrollment: mean=0.2447 std=0.9576
+    International: mean=-0.0773 std=0.7224
+    Curricular_units_1st_sem_(credited): mean=-0.0998 std=0.4055
+    Curricular_units_1st_sem_(enrolled): mean=-0.0910 std=0.2387
+    Curricular_units_1st_sem_(evaluations): mean=-0.0654 std=0.4283
+    Curricular_units_1st_sem_(approved): mean=0.3289 std=0.2213
+    Curricular_units_1st_sem_(grade): mean=0.5318 std=0.2880
+    Curricular_units_1st_sem_(without_evaluations): mean=-0.1714 std=0.1988
+    Curricular_units_2nd_sem_(credited): mean=-0.1354 std=0.3167
+    Curricular_units_2nd_sem_(enrolled): mean=-0.0503 std=0.3510
+    Curricular_units_2nd_sem_(evaluations): mean=0.1496 std=0.6215
+    Curricular_units_2nd_sem_(approved): mean=0.3594 std=0.3631
+    Curricular_units_2nd_sem_(grade): mean=0.5668 std=0.2559
+    Curricular_units_2nd_sem_(without_evaluations): mean=-0.1994 std=NaN
+    Unemployment_rate: mean=0.3073 std=0.9698
+    Inflation_rate: mean=-0.2896 std=0.8529
+    GDP: mean=0.1601 std=0.9151
+    pass_rate_1st_sem: mean=0.6858 std=0.2375
+    eval_load_1st_sem: mean=0.0664 std=0.4782
+    financial_risk: mean=0.0000 std=0.0000
+
+Cluster 5 (size: 53):
+  Class distribution: Enrolled=9.43% Graduate=11.32% Dropout=79.25% 
+  Numeric attribute summary:
+    Marital_status: mean=-0.0145 std=0.8323
+    Application_mode: mean=0.2801 std=0.9620
+    Application_order: mean=-0.1375 std=0.8438
+    Course: mean=0.1410 std=0.6333
+    Daytime/evening_attendance: mean=0.2291 std=0.6110
+    Previous_qualification: mean=0.2075 std=1.0972
+    Previous_qualification_(grade): mean=-0.0481 std=1.0120
+    Nacionality: mean=2.0212 std=2.8973
+    Mother_qualification: mean=-0.2767 std=0.9828
+    Father_qualification: mean=-0.4188 std=1.0433
+    Mother_occupation: mean=-0.1449 std=0.4961
+    Father_occupation: mean=-0.0909 std=0.6466
+    Admission_grade: mean=-0.1421 std=1.2576
+    Displaced: mean=-0.3057 std=0.9827
+    Educational_special_needs: mean=-0.1080 std=NaN
+    Debtor: mean=1.4842 std=1.5520
+    Tuition_fees_up_to_date: mean=-1.9014 std=1.3598
+    Gender: mean=-0.0253 std=0.9917
+    Scholarship_holder: mean=-0.3129 std=0.7332
+    Age_at_enrollment: mean=0.3878 std=1.0606
+    International: mean=2.9905 std=3.2101
+    Curricular_units_1st_sem_(credited): mean=-0.1409 std=0.4524
+    Curricular_units_1st_sem_(enrolled): mean=-0.0939 std=0.3753
+    Curricular_units_1st_sem_(evaluations): mean=0.1813 std=0.6791
+    Curricular_units_1st_sem_(approved): mean=-0.5637 std=0.6731
+    Curricular_units_1st_sem_(grade): mean=-0.0001 std=0.9550
+    Curricular_units_1st_sem_(without_evaluations): mean=0.9205 std=2.4615
+    Curricular_units_2nd_sem_(credited): mean=-0.2234 std=0.1937
+    Curricular_units_2nd_sem_(enrolled): mean=-0.1659 std=0.3860
+    Curricular_units_2nd_sem_(evaluations): mean=0.0652 std=0.8632
+    Curricular_units_2nd_sem_(approved): mean=-0.9394 std=0.6950
+    Curricular_units_2nd_sem_(grade): mean=-0.8215 std=1.2237
+    Curricular_units_2nd_sem_(without_evaluations): mean=2.1035 std=3.8151
+    Unemployment_rate: mean=0.1926 std=0.9951
+    Inflation_rate: mean=-0.1731 std=0.8246
+    GDP: mean=0.1290 std=1.0192
+    pass_rate_1st_sem: mean=-0.5768 std=0.9305
+    eval_load_1st_sem: mean=0.4016 std=0.8499
+    financial_risk: mean=0.0000 std=0.0000
+
+Cluster 6 (size: 37):
+  Class distribution: Enrolled=5.41% Graduate=62.16% Dropout=32.43% 
+  Numeric attribute summary:
+    Marital_status: mean=-0.2948 std=NaN
+    Application_mode: mean=-0.2547 std=0.9910
+    Application_order: mean=-0.1220 std=0.9618
+    Course: mean=-3.8630 std=1.1693
+    Daytime/evening_attendance: mean=0.2634 std=0.5199
+    Previous_qualification: mean=0.4011 std=1.4618
+    Previous_qualification_(grade): mean=0.9661 std=1.1089
+    Nacionality: mean=1.0463 std=2.9665
+    Mother_qualification: mean=-0.2958 std=0.8517
+    Father_qualification: mean=-0.2963 std=0.9128
+    Mother_occupation: mean=-0.2154 std=0.1047
+    Father_occupation: mean=-0.1842 std=0.0922
+    Admission_grade: mean=1.1155 std=1.2575
+    Displaced: mean=0.4187 std=0.8620
+    Educational_special_needs: mean=1.1578 std=3.2022
+    Debtor: mean=-0.1027 std=0.8598
+    Tuition_fees_up_to_date: mean=0.2014 std=0.6974
+    Gender: mean=0.3954 std=1.0435
+    Scholarship_holder: mean=0.6760 std=1.1532
+    Age_at_enrollment: mean=-0.4018 std=0.3344
+    International: mean=0.8816 std=2.3669
+    Curricular_units_1st_sem_(credited): mean=-0.3008 std=0.0000
+    Curricular_units_1st_sem_(enrolled): mean=-2.3539 std=0.5895
+    Curricular_units_1st_sem_(evaluations): mean=-1.8888 std=0.4068
+    Curricular_units_1st_sem_(approved): mean=-1.4687 std=0.2318
+    Curricular_units_1st_sem_(grade): mean=-2.0797 std=0.4908
+    Curricular_units_1st_sem_(without_evaluations): mean=-0.1993 std=0.0000
+    Curricular_units_2nd_sem_(credited): mean=-0.2824 std=0.0000
+    Curricular_units_2nd_sem_(enrolled): mean=-2.6903 std=0.5707
+    Curricular_units_2nd_sem_(evaluations): mean=-1.9945 std=0.2487
+    Curricular_units_2nd_sem_(approved): mean=-1.4714 std=0.0000
+    Curricular_units_2nd_sem_(grade): mean=-1.9633 std=0.0000
+    Curricular_units_2nd_sem_(without_evaluations): mean=-0.1994 std=NaN
+    Unemployment_rate: mean=0.5078 std=0.8322
+    Inflation_rate: mean=0.1126 std=0.9657
+    GDP: mean=-0.0586 std=0.9834
+    pass_rate_1st_sem: mean=-1.8318 std=0.3409
+    eval_load_1st_sem: mean=-2.1442 std=0.5449
+    financial_risk: mean=0.0000 std=0.0000
+
+Cluster 7 (size: 160):
+  Class distribution: Enrolled=8.75% Graduate=86.25% Dropout=5.00% 
+  Numeric attribute summary:
+    Marital_status: mean=1.7894 std=2.1245
+    Application_mode: mean=0.9551 std=0.7367
+    Application_order: mean=-0.5397 std=0.1032
+    Course: mean=-0.0107 std=0.4210
+    Daytime/evening_attendance: mean=-2.0947 std=1.3644
+    Previous_qualification: mean=0.3233 std=1.2300
+    Previous_qualification_(grade): mean=-0.1486 std=1.2499
+    Nacionality: mean=-0.0901 std=0.4559
+    Mother_qualification: mean=0.8408 std=0.6355
+    Father_qualification: mean=0.6228 std=0.6689
+    Mother_occupation: mean=-0.0766 std=0.5179
+    Father_occupation: mean=-0.1168 std=0.4948
+    Admission_grade: mean=0.0919 std=1.2466
+    Displaced: mean=-0.8381 std=0.6785
+    Educational_special_needs: mean=-0.0494 std=0.7382
+    Debtor: mean=-0.3384 std=0.2482
+    Tuition_fees_up_to_date: mean=0.3681 std=NaN
+    Gender: mean=-0.1999 std=0.9141
+    Scholarship_holder: mean=0.2206 std=1.0991
+    Age_at_enrollment: mean=1.8035 std=1.1024
+    International: mean=-0.1195 std=0.5061
+    Curricular_units_1st_sem_(credited): mean=0.7768 std=1.3929
+    Curricular_units_1st_sem_(enrolled): mean=0.5007 std=0.9752
+    Curricular_units_1st_sem_(evaluations): mean=0.2515 std=0.7819
+    Curricular_units_1st_sem_(approved): mean=0.7371 std=0.7588
+    Curricular_units_1st_sem_(grade): mean=0.4376 std=0.2733
+    Curricular_units_1st_sem_(without_evaluations): mean=-0.1450 std=0.3927
+    Curricular_units_2nd_sem_(credited): mean=0.6232 std=1.1764
+    Curricular_units_2nd_sem_(enrolled): mean=0.2728 std=0.7924
+    Curricular_units_2nd_sem_(evaluations): mean=0.0837 std=0.6774
+    Curricular_units_2nd_sem_(approved): mean=0.6059 std=0.5858
+    Curricular_units_2nd_sem_(grade): mean=0.4914 std=0.2611
+    Curricular_units_2nd_sem_(without_evaluations): mean=-0.1331 std=0.3250
+    Unemployment_rate: mean=-0.1316 std=0.9696
+    Inflation_rate: mean=0.1492 std=1.0229
+    GDP: mean=0.0442 std=0.9432
+    pass_rate_1st_sem: mean=0.6409 std=0.3163
+    eval_load_1st_sem: mean=-0.0579 std=0.5030
+    financial_risk: mean=0.0000 std=0.0000
+
+Cluster 8 (size: 585):
+  Class distribution: Enrolled=10.26% Graduate=9.23% Dropout=80.51% 
+  Numeric attribute summary:
+    Marital_status: mean=-0.0831 std=0.5685
+    Application_mode: mean=0.1323 std=0.9873
+    Application_order: mean=-0.0648 std=0.9348
+    Course: mean=-0.8879 std=1.9337
+    Daytime/evening_attendance: mean=-0.0446 std=1.0533
+    Previous_qualification: mean=-0.1804 std=0.4635
+    Previous_qualification_(grade): mean=-0.0592 std=0.9917
+    Nacionality: mean=-0.1263 std=0.0000
+    Mother_qualification: mean=0.0434 std=0.9918
+    Father_qualification: mean=-0.0135 std=1.0134
+    Mother_occupation: mean=-0.1361 std=0.4673
+    Father_occupation: mean=-0.1756 std=0.3289
+    Admission_grade: mean=-0.0813 std=1.0665
+    Displaced: mean=-0.0508 std=1.0035
+    Educational_special_needs: mean=-0.1080 std=0.0000
+    Debtor: mean=0.1911 std=1.1951
+    Tuition_fees_up_to_date: mean=-0.5598 std=1.4145
+    Gender: mean=0.4376 std=1.0392
+    Scholarship_holder: mean=-0.3731 std=0.6528
+    Age_at_enrollment: mean=0.2593 std=1.1111
+    International: mean=-0.1597 std=0.0000
+    Curricular_units_1st_sem_(credited): mean=-0.3008 std=NaN
+    Curricular_units_1st_sem_(enrolled): mean=-0.8335 std=1.0315
+    Curricular_units_1st_sem_(evaluations): mean=-1.0582 std=1.0533
+    Curricular_units_1st_sem_(approved): mean=-1.5211 std=0.0000
+    Curricular_units_1st_sem_(grade): mean=-2.1969 std=NaN
+    Curricular_units_1st_sem_(without_evaluations): mean=0.1719 std=1.6208
+    Curricular_units_2nd_sem_(credited): mean=-0.2824 std=0.0000
+    Curricular_units_2nd_sem_(enrolled): mean=-0.8826 std=1.1820
+    Curricular_units_2nd_sem_(evaluations): mean=-1.2167 std=0.9768
+    Curricular_units_2nd_sem_(approved): mean=-1.4368 std=0.1716
+    Curricular_units_2nd_sem_(grade): mean=-1.8385 std=0.5243
+    Curricular_units_2nd_sem_(without_evaluations): mean=0.1566 std=1.5249
+    Unemployment_rate: mean=-0.0156 std=1.0370
+    Inflation_rate: mean=0.0077 std=1.0479
+    GDP: mean=-0.1417 std=0.9838
+    pass_rate_1st_sem: mean=-1.9107 std=0.0000
+    eval_load_1st_sem: mean=-1.0078 std=1.3828
+    financial_risk: mean=0.0000 std=0.0000
+
+Cluster 9 (size: 906):
+  Class distribution: Enrolled=32.56% Graduate=43.49% Dropout=23.95% 
+  Numeric attribute summary:
+    Marital_status: mean=-0.2347 std=0.4381
+    Application_mode: mean=-0.2038 std=0.8859
+    Application_order: mean=0.0341 std=1.0368
+    Course: mean=0.2291 std=0.1827
+    Daytime/evening_attendance: mean=0.1306 std=0.8095
+    Previous_qualification: mean=-0.3420 std=0.0505
+    Previous_qualification_(grade): mean=-0.1520 std=0.9628
+    Nacionality: mean=-0.1263 std=0.0000
+    Mother_qualification: mean=-0.1711 std=0.9927
+    Father_qualification: mean=-0.1519 std=0.9953
+    Mother_occupation: mean=-0.2148 std=0.1034
+    Father_occupation: mean=-0.2027 std=0.1121
+    Admission_grade: mean=-0.1905 std=0.8742
+    Displaced: mean=0.0714 std=0.9904
+    Educational_special_needs: mean=-0.1080 std=0.0000
+    Debtor: mean=-0.0557 std=0.9280
+    Tuition_fees_up_to_date: mean=0.0685 std=0.9133
+    Gender: mean=0.0447 std=1.0127
+    Scholarship_holder: mean=-0.3705 std=0.6566
+    Age_at_enrollment: mean=-0.3494 std=0.3863
+    International: mean=-0.1597 std=0.0000
+    Curricular_units_1st_sem_(credited): mean=-0.2783 std=0.1139
+    Curricular_units_1st_sem_(enrolled): mean=-0.1705 std=0.3156
+    Curricular_units_1st_sem_(evaluations): mean=0.1574 std=0.5648
+    Curricular_units_1st_sem_(approved): mean=0.0085 std=0.4059
+    Curricular_units_1st_sem_(grade): mean=0.3575 std=0.2724
+    Curricular_units_1st_sem_(without_evaluations): mean=-0.0970 std=0.3831
+    Curricular_units_2nd_sem_(credited): mean=-0.2709 std=0.0804
+    Curricular_units_2nd_sem_(enrolled): mean=-0.1520 std=0.3877
+    Curricular_units_2nd_sem_(evaluations): mean=0.2498 std=0.6717
+    Curricular_units_2nd_sem_(approved): mean=0.0275 std=0.5043
+    Curricular_units_2nd_sem_(grade): mean=0.3918 std=0.2559
+    Curricular_units_2nd_sem_(without_evaluations): mean=-0.1994 std=NaN
+    Unemployment_rate: mean=-0.0866 std=0.9802
+    Inflation_rate: mean=0.0509 std=1.0422
+    GDP: mean=-0.0359 std=0.9632
+    pass_rate_1st_sem: mean=0.2985 std=0.4863
+    eval_load_1st_sem: mean=0.4417 std=0.6953
+    financial_risk: mean=0.0000 std=0.0000
+
+Cluster 10 (size: 198):
+  Class distribution: Enrolled=25.25% Graduate=2.02% Dropout=72.73% 
+  Numeric attribute summary:
+    Marital_status: mean=-0.1864 std=0.6442
+    Application_mode: mean=-0.1362 std=0.8501
+    Application_order: mean=0.1034 std=1.0254
+    Course: mean=0.2195 std=0.1255
+    Daytime/evening_attendance: mean=0.3500 std=0.0000
+    Previous_qualification: mean=-0.2849 std=0.3149
+    Previous_qualification_(grade): mean=-0.1364 std=0.9629
+    Nacionality: mean=-0.1190 std=0.1025
+    Mother_qualification: mean=0.0358 std=0.9662
+    Father_qualification: mean=0.0051 std=1.0015
+    Mother_occupation: mean=-0.2071 std=0.1119
+    Father_occupation: mean=-0.2046 std=0.1098
+    Admission_grade: mean=-0.3457 std=0.9114
+    Displaced: mean=0.1058 std=0.9839
+    Educational_special_needs: mean=0.5070 std=2.3200
+    Debtor: mean=0.2146 std=1.2149
+    Tuition_fees_up_to_date: mean=-0.2082 std=1.2022
+    Gender: mean=0.2153 std=1.0427
+    Scholarship_holder: mean=-0.2009 std=0.8518
+    Age_at_enrollment: mean=-0.2646 std=0.5095
+    International: mean=-0.1272 std=0.4552
+    Curricular_units_1st_sem_(credited): mean=-0.2986 std=0.0300
+    Curricular_units_1st_sem_(enrolled): mean=-0.2781 std=0.2811
+    Curricular_units_1st_sem_(evaluations): mean=0.4131 std=0.7379
+    Curricular_units_1st_sem_(approved): mean=-0.6789 std=0.4814
+    Curricular_units_1st_sem_(grade): mean=0.1963 std=0.2885
+    Curricular_units_1st_sem_(without_evaluations): mean=-0.0604 std=0.5556
+    Curricular_units_2nd_sem_(credited): mean=-0.2824 std=0.0000
+    Curricular_units_2nd_sem_(enrolled): mean=-0.2828 std=0.2949
+    Curricular_units_2nd_sem_(evaluations): mean=0.3307 std=0.9539
+    Curricular_units_2nd_sem_(approved): mean=-1.0676 std=0.5120
+    Curricular_units_2nd_sem_(grade): mean=-0.8725 std=1.1418
+    Curricular_units_2nd_sem_(without_evaluations): mean=0.3299 std=1.3046
+    Unemployment_rate: mean=-0.2173 std=1.0291
+    Inflation_rate: mean=0.1299 std=1.0501
+    GDP: mean=-0.0754 std=0.9152
+    pass_rate_1st_sem: mean=-0.6280 std=0.7058
+    eval_load_1st_sem: mean=0.9011 std=0.9399
+    financial_risk: mean=0.0000 std=0.0000
+
+Cluster 11 (size: 137):
+  Class distribution: Enrolled=5.84% Graduate=73.72% Dropout=20.44% 
+  Numeric attribute summary:
+    Marital_status: mean=0.3077 std=1.2596
+    Application_mode: mean=0.9770 std=0.8538
+    Application_order: mean=-0.3707 std=0.6340
+    Course: mean=0.1696 std=0.2400
+    Daytime/evening_attendance: mean=-0.3052 std=1.2929
+    Previous_qualification: mean=0.2707 std=1.2970
+    Previous_qualification_(grade): mean=-0.1592 std=1.0700
+    Nacionality: mean=0.0152 std=0.7290
+    Mother_qualification: mean=0.3462 std=1.0039
+    Father_qualification: mean=0.3227 std=0.9196
+    Mother_occupation: mean=0.4715 std=1.7356
+    Father_occupation: mean=0.4168 std=1.7235
+    Admission_grade: mean=-0.0476 std=0.9290
+    Displaced: mean=-0.3098 std=0.9818
+    Educational_special_needs: mean=-0.1080 std=NaN
+    Debtor: mean=-0.0362 std=0.9541
+    Tuition_fees_up_to_date: mean=0.1655 std=0.7641
+    Gender: mean=-0.0181 std=0.9941
+    Scholarship_holder: mean=-0.3215 std=0.7226
+    Age_at_enrollment: mean=0.9415 std=1.2876
+    International: mean=0.1216 std=1.3141
+    Curricular_units_1st_sem_(credited): mean=3.8645 std=1.8345
+    Curricular_units_1st_sem_(enrolled): mean=3.2107 std=1.5080
+    Curricular_units_1st_sem_(evaluations): mean=2.4942 std=1.4593
+    Curricular_units_1st_sem_(approved): mean=2.5953 std=1.3426
+    Curricular_units_1st_sem_(grade): mean=0.3923 std=0.2312
+    Curricular_units_1st_sem_(without_evaluations): mean=0.9312 std=2.9197
+    Curricular_units_2nd_sem_(credited): mean=3.8265 std=2.1105
+    Curricular_units_2nd_sem_(enrolled): mean=2.6931 std=1.4469
+    Curricular_units_2nd_sem_(evaluations): mean=1.8809 std=1.1120
+    Curricular_units_2nd_sem_(approved): mean=2.0999 std=1.1714
+    Curricular_units_2nd_sem_(grade): mean=0.4366 std=0.2134
+    Curricular_units_2nd_sem_(without_evaluations): mean=0.5656 std=2.0635
+    Unemployment_rate: mean=0.1538 std=1.2603
+    Inflation_rate: mean=0.1846 std=1.0800
+    GDP: mean=-0.6411 std=1.0713
+    pass_rate_1st_sem: mean=0.5144 std=0.3742
+    eval_load_1st_sem: mean=0.1065 std=0.6684
+    financial_risk: mean=0.0000 std=0.0000
+
+Cluster 12 (size: 1297):
+  Class distribution: Enrolled=8.94% Graduate=85.43% Dropout=5.63% 
+  Numeric attribute summary:
+    Marital_status: mean=-0.2719 std=0.2962
+    Application_mode: mean=-0.6534 std=0.5251
+    Application_order: mean=0.3879 std=1.1708
+    Course: mean=0.2879 std=0.1135
+    Daytime/evening_attendance: mean=0.3500 std=0.0000
+    Previous_qualification: mean=-0.3502 std=0.0000
+    Previous_qualification_(grade): mean=0.1059 std=0.8905
+    Nacionality: mean=-0.1249 std=0.0289
+    Mother_qualification: mean=-0.0743 std=0.9707
+    Father_qualification: mean=0.0096 std=0.9925
+    Mother_occupation: mean=-0.1791 std=0.0968
+    Father_occupation: mean=-0.1752 std=0.0920
+    Admission_grade: mean=0.0265 std=0.7734
+    Displaced: mean=0.3559 std=0.8966
+    Educational_special_needs: mean=-0.0213 std=0.8968
+    Debtor: mean=-0.2683 std=0.5244
+    Tuition_fees_up_to_date: mean=0.3324 std=0.3298
+    Gender: mean=-0.3732 std=0.7929
+    Scholarship_holder: mean=0.6848 std=1.1525
+    Age_at_enrollment: mean=-0.5765 std=0.1479
+    International: mean=-0.1399 std=0.3561
+    Curricular_units_1st_sem_(credited): mean=-0.3008 std=0.0000
+    Curricular_units_1st_sem_(enrolled): mean=0.0880 std=0.3370
+    Curricular_units_1st_sem_(evaluations): mean=-0.2147 std=0.3040
+    Curricular_units_1st_sem_(approved): mean=0.4658 std=0.2658
+    Curricular_units_1st_sem_(grade): mean=0.5323 std=0.2335
+    Curricular_units_1st_sem_(without_evaluations): mean=-0.1993 std=NaN
+    Curricular_units_2nd_sem_(credited): mean=-0.2824 std=0.0000
+    Curricular_units_2nd_sem_(enrolled): mean=0.2029 std=0.4648
+    Curricular_units_2nd_sem_(evaluations): mean=-0.0846 std=0.3935
+    Curricular_units_2nd_sem_(approved): mean=0.5925 std=0.3890
+    Curricular_units_2nd_sem_(grade): mean=0.5873 std=0.2294
+    Curricular_units_2nd_sem_(without_evaluations): mean=-0.1994 std=NaN
+    Unemployment_rate: mean=0.0710 std=0.9201
+    Inflation_rate: mean=-0.0014 std=0.9706
+    GDP: mean=0.0962 std=0.9868
+    pass_rate_1st_sem: mean=0.6903 std=0.2223
+    eval_load_1st_sem: mean=-0.2505 std=0.3390
+    financial_risk: mean=0.0000 std=0.0000
+
+Cluster 13 (size: 88):
+  Class distribution: Enrolled=21.59% Graduate=64.77% Dropout=13.64% 
+  Numeric attribute summary:
+    Marital_status: mean=-0.2948 std=NaN
+    Application_mode: mean=0.5642 std=1.2827
+    Application_order: mean=-0.3724 std=0.6591
+    Course: mean=-1.7865 std=2.1700
+    Daytime/evening_attendance: mean=0.3500 std=0.0000
+    Previous_qualification: mean=0.8600 std=1.8110
+    Previous_qualification_(grade): mean=0.4028 std=0.8852
+    Nacionality: mean=0.1285 std=1.1119
+    Mother_qualification: mean=-0.5699 std=0.8614
+    Father_qualification: mean=-0.4949 std=0.9704
+    Mother_occupation: mean=-0.2166 std=0.1046
+    Father_occupation: mean=-0.1987 std=0.1041
+    Admission_grade: mean=0.6230 std=0.9079
+    Displaced: mean=0.1768 std=0.9665
+    Educational_special_needs: mean=-0.1080 std=NaN
+    Debtor: mean=0.1788 std=1.1844
+    Tuition_fees_up_to_date: mean=0.1228 std=0.8345
+    Gender: mean=0.0725 std=1.0196
+    Scholarship_holder: mean=0.0825 std=1.0436
+    Age_at_enrollment: mean=-0.2611 std=0.3160
+    International: mean=0.2782 std=1.6186
+    Curricular_units_1st_sem_(credited): mean=2.5058 std=1.5252
+    Curricular_units_1st_sem_(enrolled): mean=2.1772 std=1.2542
+    Curricular_units_1st_sem_(evaluations): mean=1.2472 std=0.9971
+    Curricular_units_1st_sem_(approved): mean=1.9494 std=1.0026
+    Curricular_units_1st_sem_(grade): mean=0.4795 std=0.2365
+    Curricular_units_1st_sem_(without_evaluations): mean=-0.1993 std=NaN
+    Curricular_units_2nd_sem_(credited): mean=2.5251 std=1.7384
+    Curricular_units_2nd_sem_(enrolled): mean=2.1246 std=1.2320
+    Curricular_units_2nd_sem_(evaluations): mean=1.5296 std=1.0381
+    Curricular_units_2nd_sem_(approved): mean=1.7326 std=1.0136
+    Curricular_units_2nd_sem_(grade): mean=0.5214 std=0.2185
+    Curricular_units_2nd_sem_(without_evaluations): mean=-0.1240 std=0.3071
+    Unemployment_rate: mean=-0.4966 std=0.6087
+    Inflation_rate: mean=-0.1312 std=0.3528
+    GDP: mean=1.1646 std=0.4233
+    pass_rate_1st_sem: mean=0.6164 std=0.3173
+    eval_load_1st_sem: mean=-0.2308 std=0.3447
+    financial_risk: mean=0.0000 std=0.0000
+
+
+=== Apriori Analysis ===
+
+Minimum support: 0.05 (221 instances)
+Minimum metric <confidence>: 0.70
+
+Best rules found:
+
+ 1. [Educational_special_needs='(-inf-0.828699]'] ==> [financial_risk='All'] (4373) <conf: 1.00>
+ 2. [Nacionality='(-inf-1.435648]'] ==> [financial_risk='All'] (4332) <conf: 1.00>
+ 3. [International='(-inf-0.482476]'] ==> [Nacionality='(-inf-1.435648]'] (4314) <conf: 1.00>
+ 4. [International='(-inf-0.482476]'] ==> [financial_risk='All'] (4314) <conf: 1.00>
+ 5. [International='(-inf-0.482476]', financial_risk='All'] ==> [Nacionality='(-inf-1.435648]'] (4314) <conf: 1.00>
+ 6. [Nacionality='(-inf-1.435648]', International='(-inf-0.482476]'] ==> [financial_risk='All'] (4314) <conf: 1.00>
+ 7. [International='(-inf-0.482476]'] ==> [Nacionality='(-inf-1.435648]', financial_risk='All'] (4314) <conf: 1.00>
+ 8. [Curricular_units_1st_sem_(without_evaluations)='(-inf-1.537664]'] ==> [financial_risk='All'] (4283) <conf: 1.00>
+ 9. [Curricular_units_2nd_sem_(without_evaluations)='(-inf-1.392571]'] ==> [financial_risk='All'] (4282) <conf: 1.00>
+10. [Nacionality='(-inf-1.435648]', Educational_special_needs='(-inf-0.828699]'] ==> [financial_risk='All'] (4282) <conf: 1.00>
+11. [Educational_special_needs='(-inf-0.828699]', International='(-inf-0.482476]'] ==> [Nacionality='(-inf-1.435648]'] (4264) <conf: 1.00>
+12. [Educational_special_needs='(-inf-0.828699]', International='(-inf-0.482476]'] ==> [financial_risk='All'] (4264) <conf: 1.00>
+13. [Educational_special_needs='(-inf-0.828699]', International='(-inf-0.482476]', financial_risk='All'] ==> [Nacionality='(-inf-1.435648]'] (4264) <conf: 1.00>
+14. [Nacionality='(-inf-1.435648]', Educational_special_needs='(-inf-0.828699]', International='(-inf-0.482476]'] ==> [financial_risk='All'] (4264) <conf: 1.00>
+15. [Educational_special_needs='(-inf-0.828699]', International='(-inf-0.482476]'] ==> [Nacionality='(-inf-1.435648]', financial_risk='All'] (4264) <conf: 1.00>
+16. [Father_occupation='(-inf-0.33518]'] ==> [financial_risk='All'] (4247) <conf: 1.00>
+17. [Mother_occupation='(-inf-0.319442]'] ==> [financial_risk='All'] (4242) <conf: 1.00>
+18. [Educational_special_needs='(-inf-0.828699]', Curricular_units_1st_sem_(without_evaluations)='(-inf-1.537664]'] ==> [financial_risk='All'] (4233) <conf: 1.00>
+19. [Educational_special_needs='(-inf-0.828699]', Curricular_units_2nd_sem_(without_evaluations)='(-inf-1.392571]'] ==> [financial_risk='All'] (4233) <conf: 1.00>
+20. [Mother_occupation='(-inf-0.319442]', Father_occupation='(-inf-0.33518]'] ==> [financial_risk='All'] (4220) <conf: 1.00>
+Model saved to: models/RandomForest_full.model
+Model loaded: RandomForest
+
+=== Pipeline Complete ===
+BUILD SUCCESSFUL (total time: 12 minutes 16 seconds)
