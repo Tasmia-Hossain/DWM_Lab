@@ -1,0 +1,21 @@
+@relation customer_decision_test
+
+@attribute Age numeric
+@attribute Income numeric
+@attribute Gender {Male,Female}
+@attribute City {Dhaka, Chittagong, Sylhet}
+@attribute Decision {Buy, NotBuy, Consider}
+
+@data
+33, 28000, Female, Dhaka, ?
+47, 42000, Male, Chittagong, ?
+29, 33000, Female, Sylhet, ?
+55, 38000, Male, Dhaka, ?
+42, 46000, Female, Chittagong, ?
+31, 21000, Female, Sylhet, ?
+40, 35000, Female, Sylhet, ?
+45, 28000, Male, Chittagong, ?
+60, 32000, Female, Sylhet, ?
+53, 37000, Female, Dhaka, ?
+52, 52000, Female, Chittagong, ?
+30, 28000, Male, Sylhet, ?

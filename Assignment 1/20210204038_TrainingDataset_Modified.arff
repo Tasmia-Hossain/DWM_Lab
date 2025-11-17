@@ -1,0 +1,39 @@
+@relation customer_decision-weka.filters.unsupervised.attribute.MathExpression-Efloor(A)-weka.filters.supervised.instance.SMOTE-C0-K5-P150.0-S1-weka.filters.supervised.instance.SMOTE-C0-K5-P66.67-S1
+
+@attribute Age numeric
+@attribute Income numeric
+@attribute Gender {Male,Female}
+@attribute City {Dhaka,Chittagong,Sylhet}
+@attribute Decision {Buy,NotBuy,Consider}
+
+@data
+25,26000,Male,Dhaka,Buy
+30,50000,Female,Dhaka,Buy
+27,30000,Female,Sylhet,Buy
+35,25000,Female,Chittagong,Buy
+26,15000,Male,Sylhet,Buy
+40,60000,Male,Sylhet,Buy
+55,45000,Female,Chittagong,Buy
+45,20000,Male,Dhaka,Buy
+50,36000,Female,Dhaka,Buy
+32,40000,Female,Chittagong,Buy
+30,25000,Female,Sylhet,NotBuy
+20,10000,Male,Dhaka,NotBuy
+45,60000,Male,Chittagong,NotBuy
+35,30000,Male,Chittagong,NotBuy
+50,36000,Male,Dhaka,NotBuy
+27,40000,Female,Chittagong,NotBuy
+25,30000,Male,Chittagong,Consider
+40,45000,Male,Dhaka,Consider
+65,50000,Male,Dhaka,Consider
+50,22000,Female,Sylhet,Consider
+30.192871,27338.263552,Male,Dhaka,Consider
+35.661094,32291.04302,Male,Dhaka,Consider
+63.496635,49735.974588,Male,Dhaka,Consider
+52.822816,45430.18562,Male,Dhaka,Consider
+54.410855,36181.541565,Male,Dhaka,Consider
+36.518508,26666.830857,Male,Dhaka,Consider
+34.990756,58871.45683,Male,Chittagong,NotBuy
+23.818405,17978.902712,Male,Chittagong,NotBuy
+21.320127,13145.892555,Male,Chittagong,NotBuy
+36.290557,35043.962691,Male,Chittagong,NotBuy

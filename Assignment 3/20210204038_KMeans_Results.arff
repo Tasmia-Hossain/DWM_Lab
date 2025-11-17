@@ -1,0 +1,61 @@
+@relation 'MarketBasket-weka.filters.unsupervised.attribute.Remove-V-R3,4,6,9,10-weka.filters.unsupervised.attribute.NominalToBinary-R1,2,3_clustered'
+
+@attribute Instance_number numeric
+@attribute Eggs=YES numeric
+@attribute Butter=YES numeric
+@attribute Chicken=YES numeric
+@attribute PurchaseAmount numeric
+@attribute CustomerAge numeric
+@attribute Cluster {cluster0,cluster1,cluster2}
+
+@data
+0,1,0,0,500,25,cluster0
+1,1,1,1,1200,33,cluster2
+2,0,1,0,800,28,cluster0
+3,1,0,0,950,31,cluster0
+4,1,1,1,1500,42,cluster2
+5,0,1,0,600,23,cluster0
+6,1,0,0,700,35,cluster0
+7,0,1,1,1300,40,cluster2
+8,1,1,0,900,27,cluster0
+9,1,1,0,750,30,cluster0
+10,0,0,1,1400,45,cluster1
+11,1,1,0,650,22,cluster0
+12,1,0,0,820,29,cluster0
+13,0,0,1,1550,38,cluster1
+14,1,1,1,1200,34,cluster2
+15,1,1,0,980,26,cluster0
+16,0,1,1,1450,36,cluster2
+17,1,0,0,500,21,cluster0
+18,1,1,1,1350,41,cluster2
+19,0,0,0,720,24,cluster0
+20,1,1,1,1100,39,cluster2
+21,1,0,0,870,32,cluster0
+22,0,1,1,1600,47,cluster2
+23,1,1,0,600,22,cluster0
+24,1,0,0,820,29,cluster0
+25,0,1,1,1300,40,cluster2
+26,1,1,0,900,27,cluster0
+27,1,1,0,750,30,cluster0
+28,0,0,1,1400,45,cluster1
+29,1,1,0,650,22,cluster0
+30,1,0,0,820,29,cluster0
+31,0,0,1,1550,38,cluster1
+32,1,1,1,1200,34,cluster2
+33,1,1,0,980,26,cluster0
+34,0,1,1,1450,36,cluster2
+35,1,0,0,500,21,cluster0
+36,1,1,1,1350,41,cluster2
+37,0,0,0,720,24,cluster0
+38,1,1,1,1100,39,cluster2
+39,1,0,0,870,32,cluster0
+40,0,1,1,1600,47,cluster2
+41,1,1,0,600,22,cluster0
+42,1,0,0,820,29,cluster0
+43,0,1,1,1300,40,cluster2
+44,1,1,0,900,27,cluster0
+45,1,1,0,750,30,cluster0
+46,0,0,1,1400,45,cluster1
+47,1,1,0,650,22,cluster0
+48,1,0,0,820,29,cluster0
+49,0,0,1,1550,38,cluster1

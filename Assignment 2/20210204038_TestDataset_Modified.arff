@@ -1,0 +1,15 @@
+@relation StudentDataset-weka.filters.supervised.instance.StratifiedRemoveFolds-S0-N10-F3
+
+@attribute Age numeric
+@attribute Height numeric
+@attribute Weight numeric
+@attribute CGPA numeric
+@attribute Gender {Male,Female}
+@attribute Department {CSE,EEE,BBA}
+@attribute Attendance {High,Medium,Low}
+@attribute Result {Pass,Fail,Average}
+
+@data
+19,168,52,3.5,Female,EEE,Medium,Pass
+22,165,60,3.3,Male,CSE,Medium,Average
+19,159,47,2,Female,EEE,Low,Fail

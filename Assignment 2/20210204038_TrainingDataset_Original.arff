@@ -1,0 +1,42 @@
+@relation StudentDataset
+
+@attribute Age numeric
+@attribute Height numeric
+@attribute Weight numeric
+@attribute CGPA numeric
+@attribute Gender {Male,Female}
+@attribute Department {CSE,EEE,BBA}
+@attribute Attendance {High,Medium,Low}
+@attribute Result {Pass,Fail,Average}
+
+@data
+22,165,55,3.8,Male,CSE,High,Pass
+21,160,50,2.4,Female,EEE,Low,Fail
+20,170,60,3.2,Female,BBA,Medium,Average
+23,175,70,3.9,Male,CSE,High,Pass
+19,168,52,3.5,Female,EEE,Medium,Pass
+22,172,65,2.1,Male,BBA,Low,Fail
+24,180,75,3.4,Male,CSE,Medium,Average
+18,155,45,2.8,Female,EEE,Low,Fail
+21,169,59,3.6,Male,BBA,High,Pass
+20,162,52,2.9,Female,CSE,Medium,Average
+23,177,69,3.95,Male,EEE,High,Pass
+19,160,48,2.3,Female,BBA,Low,Fail
+22,165,60,3.3,Male,CSE,Medium,Average
+20,168,58,3.7,Female,EEE,High,Pass
+24,173,67,2.2,Male,BBA,Low,Fail
+21,169,55,3.1,Female,CSE,Medium,Average
+23,176,72,3.85,Male,EEE,High,Pass
+19,158,50,2.5,Female,BBA,Low,Fail
+25,181,78,3.6,Male,CSE,High,Pass
+20,163,56,3.0,Female,EEE,Medium,Average
+21,168,60,3.4,Male,BBA,High,Pass
+22,174,68,3.2,Female,CSE,Medium,Average
+19,159,47,2.0,Female,EEE,Low,Fail
+24,178,74,3.75,Male,BBA,High,Pass
+23,165,58,3.1,Female,CSE,Medium,Average
+20,162,52,2.3,Female,EEE,Low,Fail
+22,170,62,3.5,Male,BBA,High,Pass
+21,164,54,2.8,Female,CSE,Medium,Average
+25,179,76,3.9,Male,EEE,High,Pass
+18,156,48,2.1,Female,BBA,Low,Fail

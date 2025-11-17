@@ -1,0 +1,25 @@
+1. CustomerAge='(-inf-29.666667]' 22 ==> Chicken=NO 22    
+	<conf:(1)> 
+	lift:(1.72) 
+	lev:(0.18) [9] 
+	conv:(9.24)
+2. PurchaseAmount='(-inf-866.666667]' 21 ==> Chicken=NO 21    
+	<conf:(1)> 
+	lift:(1.72) 
+	lev:(0.18) [8] 
+	conv:(8.82)
+3. Chicken=NO 29 ==> Eggs=YES 25    
+	<conf:(0.86)> 
+	lift:(1.31) 
+	lev:(0.12) [5] 
+	conv:(1.97)
+4. Juice=NO 27 ==> Butter=YES 22    
+	<conf:(0.81)> 
+	lift:(1.36) 
+	lev:(0.12) [5] 
+	conv:(1.8)
+5. Juice=NO 27 ==> Eggs=YES 21    
+	<conf:(0.78)> 
+	lift:(1.18) 
+	lev:(0.06) [3] 
+	conv:(1.31)
